@@ -5,7 +5,7 @@ import  '../public/player.json'
 import { Suspense, useState } from 'react'
 import Availableplayer from './Availableplayer'
 import Selectedplayer from './Selectedplayer'
-
+import Toggle from './Toggle'
 function App() {
   const url=async()=>{
     const data=await fetch('/player.json');
@@ -13,18 +13,14 @@ function App() {
     return res;
   }
   const detail=url();
-  const [toggle,setToggle]=useState(true)
+   const [toggle,setToggle]=useState(true)
   return (
     <>
         <Nav></Nav>
-        <div className='flex justify-between'><h1>Available player</h1>
-        <div><button className={`border-1 border-gray-400  ${toggle===true?"bg-yellow-300":""}`} onClick={()=>setToggle(true)}>Available player </button>
-        <button className={`border-1 border-gray-400 ${toggle===false?"bg-yellow-300":""}`}onClick={()=>setToggle(false)}>Selected Player</button>
-        </div>
-        </div>
+        <Toggle toggle={toggle} setToggle={setToggle}></Toggle>
 
         {
-          toggle===true? <Suspense >
+          toggle===true? <Suspense fallback={<span class="loading loading-bars loading-xl "></span>}>
         <Availableplayer detail={detail}></Availableplayer>
        </Suspense>:<Selectedplayer></Selectedplayer>
         }

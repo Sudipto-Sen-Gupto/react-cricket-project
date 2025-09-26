@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nav = () => {
     return (
-        <div>
+        <div className='max-w-[1200px] mx-auto'>
             <div class="navbar bg-base-100 shadow-sm">
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">daisyUI</a>
