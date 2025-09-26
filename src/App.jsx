@@ -1,7 +1,7 @@
 
 import './App.css'
 import Nav from './Nav'
-import  '../public/player.json'
+// import  '../public/player.json'
 import { Suspense, useState } from 'react'
 import Availableplayer from './Availableplayer'
 import Selectedplayer from './Selectedplayer'
