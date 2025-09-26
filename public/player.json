@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 92,
+    "batting_style": "Left-hand bat",
+    "price": "$150,000",
+    "image_name": "Shakib_Al_Hasan_(10).jpg",
+    "image_url": "https://i.ibb.co.com/rG9XvQFV/gettyimages-1711546167-2048x2048.jpg"
+  },
+  {
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 88,
+    "batting_style": "Left-hand bat",
+    "price": "$120,000",
+    "image_name": "Tamim_Iqbal_in_2020.jpg",
+    "image_url": "https://i.ibb.co.com/8wQW3J6/gettyimages-691109638-1024x1024.jpg"
+  },
+  {
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batsman",
+    "rating": 90,
+    "batting_style": "Right-hand bat",
+    "price": "$140,000",
+    "image_name": "Mushfiqur_Rahim_2024_(cropped).jpg",
+    "image_url": "https://i.ibb.co.com/TM3jJCjt/gettyimages-1711546689-2048x2048.jpg"
+  },
+  {
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 85,
+    "batting_style": "Right-hand bat",
+    "price": "$100,000",
+    "image_name": "Mahmudullah_Riyad_(1).jpg",
+    "image_url": "https://i.ibb.co.com/N2X61W2p/gettyimages-1711546154-2048x2048.jpg"
+  },
+  {
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 89,
+    "batting_style": "Left-hand bat",
+    "price": "$130,000",
+    "image_name": "Mustafizur_Rahman_(2).jpg",
+    "image_url": "https://i.ibb.co.com/gxY688V/licensed-image.jpg"
+  },
+  {
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "role": "Batsman",
+    "rating": 95,
+    "batting_style": "Left-hand bat",
+    "price": "$200,000",
+    "image_name": "ChrisGayle.jpg",
+    "image_url": "https://i.ibb.co.com/Z6h5qQHs/gettyimages-1159984087-1024x1024.jpg"
+  },
+  {
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "role": "Batsman",
+    "rating": 96,
+    "batting_style": "Right-hand bat",
+    "price": "$220,000",
+    "image_name": "AB_de_villiers.jpg",
+    "image_url": "https://i.ibb.co.com/jkhY1tTP/gettyimages-690026948-1024x1024.jpg"
+  },
+  {
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "role": "All-rounder",
+    "rating": 94,
+    "batting_style": "Right-hand bat",
+    "price": "$210,000",
+    "image_name": "Andre_Russell.jpg",
+    "image_url": "https://i.ibb.co.com/rKCnXxsF/gettyimages-1358913120-1024x1024.jpg"
+  },
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "rating": 97,
+    "batting_style": "Right-hand bat",
+    "price": "$250,000",
+    "image_name": "Virat_Kohli.jpg",
+    "image_url": "https://i.ibb.co.com/h1CbTwhd/gettyimages-1796422349-1024x1024.jpg"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": 93,
+    "batting_style": "Right-hand bat",
+    "price": "$180,000",
+    "image_url": "https://i.ibb.co.com/Wvc9WXkB/gettyimages-2155156903-1024x1024.jpg"
+  },
+  {
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "rating": 91,
+    "batting_style": "Left-hand bat",
+    "price": "$170,000",
+   
+    "image_url": "https://i.ibb.co.com/1GzNdNDg/gettyimages-1160440588-1024x1024.jpg"
+  },
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "rating": 92,
+    "batting_style": "Right-hand bat",
+    "price": "$160,000",
+    "image_url": "https://i.ibb.co.com/JwWT5sYh/gettyimages-1711506563-1024x1024.jpg"
+  }
+]
