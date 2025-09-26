@@ -8,7 +8,7 @@ import Selectedplayer from './Selectedplayer'
 import Toggle from './Toggle'
 function App() {
   const url=async()=>{
-    const data=await fetch('./player.json');
+    const data=await fetch('/player.json');
     const res=data.json();
     return res;
   }
