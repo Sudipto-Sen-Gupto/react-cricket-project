@@ -1,12 +1,20 @@
 import React from 'react';
-
-const Selectedplayer = ({purchase,setPurchase}) => {
-    console.log(purchase);
+import Subselect from './Subselect';
+const Selectedplayer = ({purchase,setPurchase,removeData}) => {
+    
     return (
-        <div className='max-w-[1200px] mx-auto'>
-            <h1>hellow solemon</h1>
+             
+        <div>
+                
+         {
+               purchase.map(player=> <Subselect player={player}removeData={removeData}></Subselect> )
+         }
         </div>
-    );
+         
+            
+        
+      
+    )
 };
 
 export default Selectedplayer;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import img from './assets/Group.png';
 import report from './assets/report 1 (1).png';
+import { toast } from 'react-toastify';
 
 const Subplayer = ({player,setBalance,balance,purchase,setPurchase}) => {
   const [select,setSelect]=useState(false);
@@ -31,7 +32,11 @@ const Subplayer = ({player,setBalance,balance,purchase,setPurchase}) => {
       <h1>price:{player.price}</h1>
       <button class="btn" disabled={select} onClick={()=>{
        if(balance<=2000000){
-        alert("Not much money");
+        toast("Not much money");
+        return
+       }
+       if(purchase.length===6){
+        toast("6 player added")
         return
        }
        setSelect(true)
