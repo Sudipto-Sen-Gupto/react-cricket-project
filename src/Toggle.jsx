@@ -1,6 +1,7 @@
-import React from 'react';
+
 
 const Toggle = ({toggle,setToggle}) => {
+   
    
     return (
         <div className='max-w-[1200px] mx-auto'>

@@ -6,6 +6,7 @@ import { Suspense, useState } from 'react'
 import Availableplayer from './Availableplayer'
 import Selectedplayer from './Selectedplayer'
 import Toggle from './Toggle'
+
 function App() {
   const url=async()=>{
     const data=await fetch('/player.json');
@@ -13,16 +14,18 @@ function App() {
     return res;
   }
   const detail=url();
-   const [toggle,setToggle]=useState(true)
-  return (
+   const [toggle,setToggle]=useState(true);
+   const [balance,setBalance]=useState(60000000);
+   const [purchase,setPurchase]=useState([]);
+  return (     
     <>
-        <Nav></Nav>
+        <Nav balance={balance}></Nav>
         <Toggle toggle={toggle} setToggle={setToggle}></Toggle>
 
         {
           toggle===true? <Suspense fallback={<span class="loading loading-bars loading-xl "></span>}>
-        <Availableplayer detail={detail}></Availableplayer>
-       </Suspense>:<Selectedplayer></Selectedplayer>
+        <Availableplayer detail={detail}setBalance={setBalance} balance={balance} purchase={purchase} setPurchase={setPurchase}></Availableplayer>
+       </Suspense>:<Selectedplayer purchase={purchase} setPurchase={setPurchase}></Selectedplayer>
         }
        
        

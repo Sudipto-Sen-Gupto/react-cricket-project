@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from './assets/Group.png';
-import report from './assets/report 1 (1).png'
-const Subplayer = ({player}) => {
+import report from './assets/report 1 (1).png';
+
+const Subplayer = ({player,setBalance,balance,purchase,setPurchase}) => {
+  const [select,setSelect]=useState(false);
+    
+
     return (
         <div className='font-bold'>
             <div class="card bg-base-100 w-96 shadow-lg">
@@ -25,7 +29,18 @@ const Subplayer = ({player}) => {
     </div>
     <div class="flex justify-between my-2">
       <h1>price:{player.price}</h1>
-      <button class="btn">Choose Player</button>
+      <button class="btn" disabled={select} onClick={()=>{
+       if(balance<=2000000){
+        alert("Not much money");
+        return
+       }
+       setSelect(true)
+
+        setBalance(balance-player.price.split("$").join("").split(",").join(""))
+
+       setPurchase([...purchase,{player}])
+        }}>{ select===false?"Choose Player":"Purchased"}</button>
+      
     </div>
   </div>
 </div>

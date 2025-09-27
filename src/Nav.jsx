@@ -1,7 +1,7 @@
 import React from 'react';
 import icon from './assets/logo.png'
 import currency from './assets/Currency (1).png'
-const Nav = () => {
+const Nav = ({balance}) => {
     return (
         <div className='max-w-[1200px] mx-auto p-4'>
             <div class="navbar bg-base-100  shadow-sm">
@@ -14,7 +14,7 @@ const Nav = () => {
       <li><a href="">Fixture</a></li>
       <li><a href="">Teams</a></li>
       <li><a href="">Schedule</a></li>
-      <button class="btn p-4"><span>$6000000</span><span>coin</span><span><img src={currency} alt="" /></span></button>
+      <button class="btn p-4"><span>{balance}</span><span>coin</span><span><img src={currency} alt="" /></span></button>
       </ul>
   </div>
 </div>  
